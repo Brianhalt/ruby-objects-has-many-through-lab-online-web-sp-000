@@ -23,7 +23,6 @@ class Patient
       theappointments << appointment.doctor
     end
     return theappointments
-    end
   end
 
 end

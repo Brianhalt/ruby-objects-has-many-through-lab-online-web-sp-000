@@ -31,14 +31,4 @@ class Patient
     return thedoctors
   end
 
-  # def patients
-  #   thepatients = []
-  #   self.appointments.each do |appointment|
-  #     thepatients << appointment.patient
-  #   end
-  #   return thepatients
-  # end
-
-
-
 end

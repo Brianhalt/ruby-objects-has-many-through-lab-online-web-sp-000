@@ -18,11 +18,6 @@ class Doctor
     Appointment.new(date, self, patient)
   end
 
-  # def new_song(name, genre)
-  #   Song.new(name, self, genre)
-  # end
-
-
   def appointments
     theappointments = []
     self.appointments.each do |doctor|
@@ -30,4 +25,12 @@ class Doctor
   end
     return theappointments
   end
+
+  def appointments
+    Appointment.all.select do |appointment|
+      appointment.doctor == self
+    end
+  end
+
+  
 end

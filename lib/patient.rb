@@ -18,6 +18,6 @@ class Patient
     binding.pry
   end
 
-  
+
 
 end

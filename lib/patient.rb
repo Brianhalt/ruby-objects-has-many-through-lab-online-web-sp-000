@@ -29,12 +29,20 @@ class Patient
   #   end
   # end
 
-  def appointments
-    thedoctors = []
-    self.appointments.each do |doctor|
-      thedoctors << appointment.doctor
-    end
-    return thedoctors
-  end
+  # def appointments
+  #   theappointments = []
+  #   self.appointments.each do |doctor|
+  #     thedoctors << appointment.doctor
+  #   end
+  #   return thedoctors
+  # end
+  # 
+  # def patients
+  #   thepatients = []
+  #   self.appointments.each do |appointment|
+  #     thepatients << appointment.patient
+  #   end
+  #   return thepatients
+  # end
 
 end

@@ -17,6 +17,11 @@ class Doctor
     Appointment.new(patient, self, date)
   end
 
-  def appointments()
-
+  def appointments
+    theappointments = []
+    self.appointments.each do |doctor|
+      theappointments << appintments.doctor
+  end
+    return theappointments
+  end
 end

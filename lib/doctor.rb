@@ -1,11 +1,11 @@
 require 'pry'
 class Doctor
-  attr_accessor :doctor
+  attr_accessor :name
 
   @@all = []
 
-  def initialize(doctor)
-    @doctor = doctor
+  def initialize(name)
+    @name = name
     @@all << self
   end
 

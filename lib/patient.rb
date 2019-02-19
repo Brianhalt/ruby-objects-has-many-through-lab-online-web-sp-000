@@ -17,12 +17,16 @@ class Patient
     Appointment.new(date, self, doctor)
   end
 
-  # def appointments
-  #   theappointments = []
-  #   self.appointments.each do |appointment|
-  #     theappointments << appointment.doctor
-  #   end
-  #   return theappointments
-  # end
+  def appointments
+    Appointment.all.select do |doctor|
+      appointment.doctor == self
+    end
+  end
+
+  def patients
+    Appointment.all.select do |doctor|
+      appointment.doctor == self
+    end
+  end
 
 end

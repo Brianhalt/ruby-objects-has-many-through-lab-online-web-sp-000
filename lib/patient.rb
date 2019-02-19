@@ -22,7 +22,7 @@ class Patient
   #     appointment.doctor == self
   #   end
   # end
-  # 
+  #
   # def patients
   #   Appointment.all.select do |doctor|
   #     appointment.doctor == self

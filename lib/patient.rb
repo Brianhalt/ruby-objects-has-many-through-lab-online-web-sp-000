@@ -14,9 +14,7 @@ class Patient
   end
 
   def new_appointment(doctor, date)
-    # binding.pry
     Appointment.new(self, doctor, date)
-    # binding.pry
   end
 
   def appointments
@@ -24,14 +22,6 @@ class Patient
       appointment.patient == self
     end
   end
-
-  # def appointments
-  #   theappointments = []
-  #   self.appointments.each do |date|
-  #     theappointments << appointment.date
-  #   end
-  #   return theappointments
-  # end
 
   def doctors
     thedoctors = []

@@ -17,20 +17,20 @@ class Patient
     Appointment.new(date, doctor, self)
   end
 
-  # def appointments
-  #   theappointments = []
-  #   self.appointments.each do |date|
-  #     theappointments << appointment.date
-  #   end
-  #   return theappointments
-  # end
-  #
-  # def doctors
+  def appointments
+    # theappointments = []
+    # self.appointments.each do |date|
+    #   theappointments << appointment.date
+    # end
+    # return theappointments
+  end
+  
+  def doctors
   #   thedoctors = []
   #   self.appointments.each do |doctor|
   #     thedoctors << appointment.doctors
   #   end
   #   return thedoctors
-  # end
+  end
 
 end

@@ -34,10 +34,10 @@ class Doctor
 
   def patients
     thepatients = []
-    self.songs.each do |song|
-      thegenres << song.genre
+    self.appointments.each do |appointment|
+      thepatients << appointment.patient
     end
-    return thegenres
+    return thepatients
   end
 
 end

@@ -20,19 +20,25 @@ class Patient
   end
 
   def appointments
-    # theappointments = []
-    # self.appointments.each do |date|
-    #   theappointments << appointment.date
-    # end
-    # return theappointments
+    Appointment.all.select do |appointment|
+      appointment.patient == self
+    end
   end
 
-  def doctors
-  #   thedoctors = []
-  #   self.appointments.each do |doctor|
-  #     thedoctors << appointment.doctors
+  # def appointments
+  #   theappointments = []
+  #   self.appointments.each do |date|
+  #     theappointments << appointment.date
   #   end
-  #   return thedoctors
+  #   return theappointments
+  # end
+
+  def doctors
+    thedoctors = []
+    self.appointments.each do |doctor|
+      thedoctors << appointment.doctors
+    end
+    return thedoctors
   end
 
 end

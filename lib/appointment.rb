@@ -4,9 +4,9 @@ class Appointment
   attr_accessor :date, :doctor, :patient
 
   @@all = []
-  binding.pry
 
   def initialize(date)
+    binding.pry
     @date = date
     @doctor = doctor
     @patient = patient

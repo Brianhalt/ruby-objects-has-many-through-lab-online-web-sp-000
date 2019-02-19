@@ -18,14 +18,6 @@ class Doctor
     Appointment.new(date, self, patient)
   end
 
-  # def appointments
-  #   theappointments = []
-  #   self.appointments.each do |doctor|
-  #     theappointments << appintments.doctor
-  # end
-  #   return theappointments
-  # end
-
   def appointments
     Appointment.all.select do |appointment|
       appointment.doctor == self

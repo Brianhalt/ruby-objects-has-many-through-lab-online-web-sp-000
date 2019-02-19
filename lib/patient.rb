@@ -28,9 +28,9 @@ class Patient
   def doctors
     thedoctors = []
     self.appointments.each do |doctor|
-      thepatients << appointment.patient
+      thedoctors << appointment.doctors
     end
-    return thepatients
+    return thedoctors
   end
 
 end

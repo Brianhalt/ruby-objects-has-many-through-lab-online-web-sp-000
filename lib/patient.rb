@@ -24,7 +24,7 @@ class Patient
     # end
     # return theappointments
   end
-  
+
   def doctors
   #   thedoctors = []
   #   self.appointments.each do |doctor|
